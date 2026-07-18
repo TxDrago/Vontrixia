@@ -1,0 +1,57 @@
+"use client";
+
+import { ReactNode } from "react";
+import { motion } from "framer-motion";
+
+interface FadeRightProps {
+  children: ReactNode;
+  className?: string;
+
+  delay?: number;
+  duration?: number;
+
+  distance?: number;
+
+  once?: boolean;
+  amount?: number;
+}
+
+const FadeRight = ({
+  children,
+  className = "",
+
+  delay = 0,
+  duration = 0.7,
+
+  distance = 40,
+
+  once = true,
+  amount = 0.2,
+}: FadeRightProps) => {
+  return (
+    <motion.div
+      className={className}
+      initial={{
+        opacity: 0,
+        x: distance,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      viewport={{
+        once,
+        amount,
+      }}
+      transition={{
+        delay,
+        duration,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export default FadeRight;
