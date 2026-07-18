@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     "Vontrixia Technologies Pvt Ltd delivers AI-powered digital solutions, enterprise software, web applications, and modern technology experiences.",
 
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
     shortcut: "/logo.png",
   },
 };
