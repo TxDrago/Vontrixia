@@ -5,7 +5,7 @@ import PageHero from "@/components/common/PageHero";
 const ServicesHero = () => {
   return (
     <PageHero
-   image="/Our_Services.png"
+   image="/our_services.png"
       imageAlt="About Vontrixia Technologies"
       breadcrumb={["Home", "Services"]}
     />
