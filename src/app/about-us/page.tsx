@@ -2,7 +2,7 @@
 
 import AboutHero from "@/sections/about/AboutHero";
 import CoreValues from "@/sections/about/CoreValues";
-import CTA from "@/sections/about/CTA";
+import CTA from "@/components/common/CTA";
 import FromVisionToReality from "@/sections/about/FromVisionToReality";
 import MeetTheTeam from "@/sections/about/MeetTheTeam";
 import MissionVision from "@/sections/about/MissionVision";
@@ -11,7 +11,7 @@ import TechnologyBuiltAroundYourVision from "@/sections/about/TechnologyVision.t
 import Footer from "@/sections/home/footer";
 import Navbar from "@/sections/home/navbar";
 
-const ContactPage = () => {
+const About = () => {
   return (
     <>
 
@@ -45,4 +45,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default About;
