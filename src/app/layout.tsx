@@ -15,12 +15,15 @@ export const metadata: Metadata = {
     "Vontrixia Technologies Pvt Ltd delivers AI-powered digital solutions, enterprise software, web applications, and modern technology experiences.",
 
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/logo.png" },
+    ],
+    shortcut: ["/logo.png"],
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
